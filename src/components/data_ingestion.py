@@ -61,6 +61,6 @@ class DataIngestion:
         
         
         
-if __name__ == "__main__":
-    obj = DataIngestion()                   #this will initialize the path of train, test & raw
-    obj.initiate_data_ingestion()           #this will create artifacts folder & update the logs
+# if __name__ == "__main__":
+#     obj = DataIngestion()                   #this will initialize the path of train, test & raw
+#     obj.initiate_data_ingestion()           #this will create artifacts folder & update the logs
