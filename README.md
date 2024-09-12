@@ -25,3 +25,6 @@
 #### 20. In src > components > data_ingestion.py : we will write code to read data fom data source which can be either a database or api. for now, we will use the data file saved locally & split into train & test
 #### 21. We will be reading already cleaned data, we only have to perform encoding & scaling.
 #### 22. Also we need to update gitignore to not read artifacts folder
+#### 23. data_ingestion will read data from source which can be anything like local, database, api etc and perform train test split & save data into artifacats folder.
+#### 24. After data_ingestion, we will write code in "data_transformation" module where we can write codes for data cleaning, feature engineering, missing data imputation, feature transformation, encoding & scaling etc but since we are using pre-cleaned data which doesnt require data cleaning, we only need to perform encoding & scaling so In future, everytime we need to re-train the model, we can just pass the pre-cleaned data & it will apply transformations, build model & deploy
+#### 25. 

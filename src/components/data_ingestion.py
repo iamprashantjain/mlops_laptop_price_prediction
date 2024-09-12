@@ -1,10 +1,15 @@
 import os
 import sys
+
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from dataclasses import dataclass
+
 from src.exception import CustomException
 from src.logger import logging
+from src.components.data_transformation import DataTransformation
+from src.components.data_transformation import DataTransformationConfig
+
 
 
 @dataclass
@@ -61,6 +66,12 @@ class DataIngestion:
         
         
         
-# if __name__ == "__main__":
-#     obj = DataIngestion()                   #this will initialize the path of train, test & raw
-#     obj.initiate_data_ingestion()           #this will create artifacts folder & update the logs
+if __name__ == "__main__":
+    obj = DataIngestion()                   #this will initialize the path of train, test & raw
+    train_data, test_data = obj.initiate_data_ingestion()           #this will create artifacts folder & update the logs
+    
+    
+    data_transformation = DataTransformation()
+    data_transformation.initiate_data_transformation(train_data, test_data)
+    
+    
