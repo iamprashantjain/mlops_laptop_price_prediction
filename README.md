@@ -29,4 +29,6 @@
 #### 24. After data_ingestion, we will write code in "data_transformation" module where we can write codes for data cleaning, feature engineering, missing data imputation, feature transformation, encoding & scaling etc but since we are using pre-cleaned data which doesnt require data cleaning, we only need to perform encoding & scaling so In future, everytime we need to re-train the model, we can just pass the pre-cleaned data & it will apply transformations, build model & deploy
 #### 25. After data is read, splitted & transformed, we can now train the model & create a module "model_trainer.py" module
 #### 26. We will train multiple models & see what accuracy we are getting same way we have done in jupyter notebook & choose the one with highest score & create model.pkl file for that model
-#### 27. 
+#### 27. Additionally we can apply HyperParameterTuning in model_trainer.py
+#### 28. Now since we have our model.pkl fie, we can create a flask or streamlit app for user to interact with & get the predicted values for thier laptops
+#### 29. 
