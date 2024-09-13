@@ -94,3 +94,17 @@ def evaluate_models(X_train, X_test, y_train, y_test, models):
             print(f"Error evaluating model {name}: {e}")
 
     return best_model_name, best_model, best_model_score
+
+
+
+
+def load_object(file_path):
+    """ to load pkl files"""
+    
+    try:
+        with open(file_path, "rb") as file_obj:
+            return dill.load(file_obj)
+        
+    except Exception as e:
+        raise CustomException(e,sys)
+    

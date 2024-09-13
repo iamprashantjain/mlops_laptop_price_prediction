@@ -31,4 +31,9 @@
 #### 26. We will train multiple models & see what accuracy we are getting same way we have done in jupyter notebook & choose the one with highest score & create model.pkl file for that model
 #### 27. Additionally we can apply HyperParameterTuning in model_trainer.py
 #### 28. Now since we have our model.pkl fie, we can create a flask or streamlit app for user to interact with & get the predicted values for thier laptops
-#### 29. 
+#### 29. Now we have created a streamlit app which will get input from user, scaled & pre processed & finally return the p[redicted amount
+
+
+
+
+<!-- https://www.youtube.com/watch?v=gbJn2Ls2QsI&list=PLZoTAELRMXVPS-dOaVbAux22vzqdgoGhG&index=10 -->
